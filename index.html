@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Text Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gradient Text Generator</h1>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="textInput"
+          placeholder="Enter your slogan text..."
+          value="Magical. Extraordinary. Remarkable."
+        />
+        <button id="generateBtn">Generate</button>
+
+        <div class="presets">
+          <button class="preset-btn" data-gradient="purple-blue">
+            Purple Blue
+          </button>
+          <button class="preset-btn" data-gradient="pink-orange">
+            Pink Orange
+          </button>
+          <button class="preset-btn" data-gradient="rainbow">Rainbow</button>
+          <button class="preset-btn" data-gradient="blue-green">
+            Blue Green
+          </button>
+        </div>
+      </div>
+
+      <div class="output-container">
+        <div id="gradientText" class="gradient-text">
+          Magical. Extraordinary. Remarkable.
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

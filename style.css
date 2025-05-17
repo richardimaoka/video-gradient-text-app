@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f5f7;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1d1d1f;
+}
+
+.input-container {
+  margin-bottom: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0071e3;
+  box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+}
+
+button {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #0077ed;
+}
+
+.output-container {
+  padding: 40px 20px;
+  margin-top: 10px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gradient-text {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    #ff9a9e,
+    #fad0c4,
+    #fad0c4,
+    #a18cd1,
+    #ff9a9e
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 6s linear infinite;
+  letter-spacing: -0.5px;
+}
+
+/* Preset buttons */
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.preset-btn {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.preset-btn:hover {
+  background-color: #e8e8ed;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .gradient-text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-text {
+    font-size: 28px;
+  }
+}
