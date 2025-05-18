@@ -8,35 +8,20 @@
   </head>
   <body>
     <div class="container">
-      <h1>Gradient Text Generator</h1>
+      <h1>テキストのグラデーション</h1>
 
-      <div class="input-container">
+      <form class="input-container">
         <input
           type="text"
           id="textInput"
-          placeholder="Enter your slogan text..."
-          value="Magical. Extraordinary. Remarkable."
+          placeholder="テキストを入力！下部でグラデーションが掛かります。"
+          value=""
+          onblur="generateGradientText()"
         />
-        <button id="generateBtn">Generate</button>
-
-        <div class="presets">
-          <button class="preset-btn" data-gradient="purple-blue">
-            Purple Blue
-          </button>
-          <button class="preset-btn" data-gradient="pink-orange">
-            Pink Orange
-          </button>
-          <button class="preset-btn" data-gradient="rainbow">Rainbow</button>
-          <button class="preset-btn" data-gradient="blue-green">
-            Blue Green
-          </button>
-        </div>
-      </div>
+      </form>
 
       <div class="output-container">
-        <div id="gradientText" class="gradient-text">
-          Magical. Extraordinary. Remarkable.
-        </div>
+        <div id="gradientText" class="gradient-text"></div>
       </div>
     </div>
 
